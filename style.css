@@ -2,9 +2,15 @@
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: auto 1fr 2fr;
+  /* grid-template-columns: auto 1fr 2fr; */
   /* grid-template-columns: repeat(3, 1fr); */
+  /* Grid system auto adjusts to size of viewport. Min size 200px wide, Max width 1fraction */
+
+  grid-template-columns: repeat(auto-fill) minmax(200px, 1fr);
   grid-template-rows: 1fr;
+
+  /* justify-items:  content adjusted horizontally*/
+  /* align-items:  content adjusted vertically*/
 }
 
 .zone {
